@@ -5,7 +5,7 @@ var totalPrice = 0;
             console.log(cust_order);
             document.getElementById("flex-container").innerHTML = "";
             var totalPrice = 0;
-            for (var i = 0; i < cust_order.length; i++) {
+            for (var i = 0; i <cust_order.length; i++) {
                 if (cust_order[i] != "fake") {
                     document.getElementById("flex-container").innerHTML += "<tr><td><h5><strong id=" + i + ">" + cust_order[i].prod_name +
                         "</strong></h5><br><h6>₱" + cust_order[i].prod_price + ".00" + "&nbsp;" + "</h6></td><td><button id='something' ' class='btn btn-danger' style='float: right;' onClick='removeItem(" + i + ")'>Remove</button></td></tr>" + "</br></br>";

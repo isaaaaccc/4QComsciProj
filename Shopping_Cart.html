@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+ <html lang = "en">
+    <head>
+        <title>Your Shopping Cart</title>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width=device-width, inital-scale = 1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/2a3c86d9f4.js" crossorigin="anonymous"></script>
+        
+        <style>
+            body {
+    background-color: whitesmoke;
+}
+
+.header {
+    display: inline-flex;
+    background-color: #FEDCDC;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+}
+
+.logo, .searchbox{
+    display: inline-flex;
+}
+
+.searchbox {
+    width: 500px;
+    height: 40%;
+}
+
+.sbutton button { 
+    height: 100%;
+    border-color: white;
+}
+
+
+.logo {
+    background-image: url('https://i.postimg.cc/9fZcFrMR/E-Shop-Logo-removebg-preview.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.logo h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    color: black;
+}
+
+.cbutton a {
+    width: 80px;
+    height: 80px;
+    background-color: #FEDCDC;
+    position: relative;
+    left: 10px;
+    top: 4px;
+}
+
+.cbutton i {
+    color: black;
+}
+
+.cbutton i:hover {
+    color: rgba(0, 0, 0, 0.495);
+}
+
+.navigation {
+    display: flex;
+    height: 60%;
+    background-color: #f4f4f4;
+    border-radius: 20px;
+}
+
+.nav-bar{
+    display: inline-flex;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-button1, .nav-button2, .nav-button3 {
+    background-color: #FEE7E6;
+    text-align: center;
+    border-width: 10px;
+    border-style: outset;
+    border-radius: 20px;
+}
+
+.nav-button1:hover, .nav-button2:hover, .nav-button3:hover {
+    border-style: inset;
+}
+
+.container1 {
+    display: flex;
+    width: 90%;
+    height: 800px;
+    background-color: rgba(237, 231, 231, 0.879);
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: rgba(237, 231, 231, 0.879);
+}
+
+.footer p {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.container1 h3 {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.container2 h3{
+    margin-top: 15px;
+    text-align: center;
+}
+
+.receipt {
+    width: 100%;
+    background-color: rgba(255, 249, 199, 0.879);
+    border-bottom: 3px solid black;
+    height: 11%;
+}
+
+.cartitems {
+    width: 100%;
+    background-color: rgba(255, 249, 199, 0.879);
+    border-bottom: 3px solid black;
+    height: 8%;
+}
+
+.container2 {
+    display: flex;
+    width: 100%;
+    height: 600px;
+    background-color: rgba(237, 231, 231, 0.879);
+}
+
+.flex-container {
+    display: flex;
+    width: 35%;
+    flex-direction: column;
+    background-color: whitesmoke;
+}
+
+.flex-container button:hover {
+  background-color: #ffb6b6;
+  color: black;
+}
+
+
+
+
+/* Media Query for Phone and Tablet */
+@media (max-width: 940px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        z-index: 2;
+    }
+
+    .logo {
+        position: relative;
+        right: 60px;
+    }
+
+    .logo h1 {
+        font-size: 40px;
+        position: relative;
+        left: 60px;
+        top: 5px;
+    }
+
+    .search {
+        width: auto;
+    }
+
+    .searchbox {
+        margin-left: 50%;
+        margin-top: 10px;
+    }
+
+    .navigation {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .nav-button1, .nav-button2, .nav-button3 {
+        width: 110px;
+    }
+
+    .container1 {
+        margin-top: 230px;
+        margin-bottom: 30px;
+        margin-left: 45px;
+        margin-right: 45px;
+        width: 90%;
+    }
+
+    .container2 {
+        margin-bottom: 30px;
+        background-color: rgba(237, 231, 231, 0.879);
+        width: 100%;
+    }
+
+    .flex-container {
+        margin-left: 45px;
+        margin-right: 45px;
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    .flex-container button {
+        display: flex;
+        height: 60px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 25px;
+        justify-content: center;
+        align-items: center;
+        background-color: #FEDCDC;
+        border: 1px solid rgba(0, 0, 0, 0.144);
+        color: black;
+    }
+
+
+
+}
+/* Media Query for Phone and Tablet */
+
+/*Media Query for Desktop*/
+@media (min-width: 941px) {
+    .header {
+        height: 110px;
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .logo h1 {
+        position: relative;
+        left: 110px;
+        top: 28px;
+    }
+
+    .search {
+        width: 80%;
+    }
+
+    .navigation {
+        margin-top: 20px;
+        margin-left: 30px;
+        align-items: center;
+    }
+
+    .searchbox {
+        margin-top: 35px;
+        margin-left: 200px;
+    }
+
+    .nav-button1, .nav-button2, .nav-button3 {
+        width: 110px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 10px;
+    }
+
+    .container1 {
+        display: inline-flex;
+        margin-top: 150px;
+        margin-left: 60px;
+        width: 50%;
+        margin-bottom: 40px;
+    }
+
+    .container2 {
+        display: inline-flex;
+        margin-top: 150px;
+        margin-bottom: 40px;
+        margin-left: 6%;
+        margin-right: 15px;
+        width: 100%;
+    }
+
+    .flex-container {
+        display: inline-flex;
+        margin-left: 4%;
+        margin-right: 25px;
+        width: 35%;
+
+    }
+
+    .flex-container button {
+        display: flex;
+        height: 60px;
+        width: 260%;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 25px;
+        justify-content: center;
+        align-items: center;
+        background-color: #FEDCDC;
+        border: 1px solid rgba(0, 0, 0, 0.144);
+        color: black;
+    }
+
+
+}
+/*Media Query for Desktop*/
+
+.cartitem {
+    margin-top: 5vh;
+    border-bottom: 1px solid #000000;
+    height: 16vh;
+    width: 100%;
+    position: relative;
+    
+}
+.cartitem img {
+    height: 15vh;
+    float: left;
+    margin-left: 3vw;
+    
+}
+.details p {
+    font-size: 4vh;
+    left: 2vw;
+    position: relative;
+    float: left;
+    
+}
+.cancel button {
+    right: 2vw;
+    position: relative;
+    margin-top: 2.5vh;
+    float: right;
+    
+}
+.container1{
+    overflow: auto;
+}
+
+        </style>
+    </head>
+
+    <body>
+        <div class = "header">
+            <div class = "logo">
+                <a href = "#"><h1> InstaBag </h1></a>
+            </div>
+            <div class = "searchbox">
+                <input type = "text" placeholder = "Search" class = "search">
+                <div class = "sbutton">
+                    <button> <i class="fa-solid fa-magnifying-glass"></i> </button>
+                </div>
+
+                <div class = "cart">
+                    <div class = "cbutton">
+                         <a href = "#"> <i class="fa-solid fa-cart-shopping fa-2x"></i> </a>
+                    </div>
+                </div>
+                
+            </div>
+
+            
+            <div class = navigation>
+                <div class = "nav-bar">
+                    <div class = "nav-button1">
+                        <a href = "Homepage.html"> Home </a>
+                    </div>
+                    <div class = "nav-button2">
+                        <a href = "#"> About Page </a>
+                    </div>                        <div class = "nav-button3">
+                        <a href = "Forms_Page.html"> Settings </a>
+                    </div>
+                </div>
+            </div>
+
+
+            
+        </div>
+
+        <div class = "container1">
+            <div id="cartitem" class="cartitems">
+                <h3>Shopping Cart</h3>
+                
+                
+            </div>           
+        </div>
+
+    <div class="flex-container">
+        <div class = "container2">
+                <div class="receipt">
+                    <h3>Receipt</h3>
+                </div>
+        </div>
+
+        <div class="flex-container">
+            <button type="button" class="btn btn-default btn-m" id="buybtn">Purchase</button>
+            <button type="button" class="btn btn-default btn-m" id="clearbtn" onclick="remall()">Clear</button>
+        </div>
+    </div>
+
+        <div class = "footer">
+            <p> Copyright &copy; 2022 InstaBag. All Rights Reserved </p>
+        </div>
+    </body>
+    <script src="instabagjs.js"></script>
+ </html>

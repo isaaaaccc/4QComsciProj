@@ -1,0 +1,441 @@
+ <!DOCTYPE html>
+ <html lang = "en">
+    <head>
+        <title> Default Page </title>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width=device-width, inital-scale = 1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/2a3c86d9f4.js" crossorigin="anonymous"></script>
+        
+        <style>
+            body {
+    background-color: whitesmoke;
+}
+
+.header {
+    display: inline-flex;
+    background-color: #FEDCDC;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+}
+
+.logo, .searchbox{
+    display: inline-flex;
+}
+
+.searchbox {
+    width: 500px;
+    height: 40%;
+}
+
+.sbutton button { 
+    height: 100%;
+    border-color: white;
+}
+
+
+.logo {
+    background-image: url('https://i.postimg.cc/9fZcFrMR/E-Shop-Logo-removebg-preview.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.logo h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    color: black;
+}
+
+.cbutton a {
+    width: 80px;
+    height: 80px;
+    background-color: #FEDCDC;
+    position: relative;
+    left: 10px;
+    top: 4px;
+}
+
+.cbutton i {
+    color: black;
+}
+
+.cbutton i:hover {
+    color: rgba(0, 0, 0, 0.495);
+}
+
+.navigation {
+    display: flex;
+    height: 60%;
+    background-color: #f4f4f4;
+    border-radius: 20px;
+}
+
+.nav-bar{
+    display: inline-flex;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-button1, .nav-button2, .nav-button3 {
+    background-color: #FEE7E6;
+    text-align: center;
+    border-width: 10px;
+    border-style: outset;
+    border-radius: 20px;
+}
+
+.nav-button1:hover, .nav-button2:hover, .nav-button3:hover {
+    border-style: inset;
+}
+
+
+.container1 {
+    display: flex;
+    width: 90%;
+    background-color: rgba(237, 231, 231, 0.879);
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    flex-wrap: wrap;
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: rgba(237, 231, 231, 0.879);
+    opacity: 0.5;
+}
+
+.footer p {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.dmslide{
+    width: 80%;
+    margin: auto;
+    margin-top: 65px;
+    border-top: black 2px solid;
+    border-right: black 2px solid;
+    border-bottom: rgb(247, 197, 197) 5px solid;
+    border-left: rgb(247, 197, 197) 5px solid;
+    border-radius: 25px;
+    margin-top: 10%;
+}
+.dmslide img{
+    width: 80%;
+    height: 60%;
+}
+.dmslide:hover{
+    box-shadow: 10px 10px 10px 10px pink;
+}
+.item11{
+    grid-area: myArea;
+ }
+
+.grid-container{
+    display: grid;
+    grid-template-areas: "myArea myArea myArea myArea";
+    gap: 10px;
+    background-color: #FEDCDC;
+    width: 90%;
+    padding: 20px;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 300;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-weight: 400;
+}
+ .grid-container div {
+  background-color: rgba(237, 231, 231, 0.879);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 40px;
+}
+.categories{
+   display: grid;
+   grid-template-areas: "myArea myArea myArea myArea myArea myArea";
+   background-color: rgba(237, 231, 231, 0.879);
+   margin: auto;
+   width: 80%;  
+   column-gap: 10px;
+   font-family: 'Merriweather Sans', sans-serif;
+   font-weight: 300;
+   justify-items: center;
+   color: #A9888D;
+   margin-bottom: 5%;
+   border: 5px inset rgb(253, 203, 211);
+   border-radius: 25px;
+
+}
+.categories div{
+    background-color: rgba(237, 231, 231, 0.879);
+    text-align: center;
+    padding: 10px 0;
+    font-size: 30px;
+}
+
+.images{
+    width: 120px;
+    height: 120px; 
+}
+
+   
+/* Media Query for Phone and Tablet */
+@media (max-width: 940px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .logo {
+        position: relative;
+        right: 60px;
+    }
+
+    .logo h1 {
+        font-size: 40px;
+        position: relative;
+        left: 60px;
+        top: 5px;
+    }
+
+    .search {
+        width: auto;
+    }
+
+    .searchbox {
+        margin-left: 50%;
+        margin-top: 10px;
+    }
+
+    .navigation {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .nav-button1, .nav-button2, .nav-button3 {
+        width: 110px;
+    }
+
+    .container1 {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 230px;
+        margin-bottom: 30px;
+    }
+    .dmslide{
+        min-width: 60%;
+    }
+    .flex-container{
+        flex-direction: column;
+    }
+    .grid-container{
+        grid-template-areas: "myArea myArea";
+        font-size: 30px;
+    }
+    .categories{
+        grid-template-areas: "myArea myArea";
+        font-size: 10px;
+    }
+    .images{
+        width: 100px;
+        height: 100px;
+    }
+}
+/* Media Query for Phone and Tablet */
+
+/*Media Query for Desktop*/
+@media (min-width: 941px) {
+    .header {
+        height: 110px;
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .logo h1 {
+        position: relative;
+        left: 110px;
+        top: 28px;
+    }
+
+    .search {
+        width: 80%;
+    }
+
+    .navigation {
+        margin-top: 20px;
+        margin-left: 30px;
+        align-items: center;
+    }
+
+    .searchbox {
+        margin-top: 35px;
+        margin-left: 200px;
+    }
+
+    .nav-button1, .nav-button2, .nav-button3 {
+        width: 110px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 10px;
+    }
+
+    .container1 {
+        margin-top: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+    }
+    
+
+}
+/*Media Query for Desktop*/
+        </style>
+    </head>
+
+    <body>
+        <div class = "header">
+            <div class = "logo">
+                <a href = "#"><h1> InstaBag </h1></a>
+            </div>
+            <div class = "searchbox">
+                <input type = "text" placeholder = "Search" class = "search">
+                <div class = "sbutton">
+                    <button> <i class="fa-solid fa-magnifying-glass"></i> </button>
+                </div>
+
+                <div class = "cart">
+                    <div class = "cbutton">
+                         <a href = "Shopping_Cart.html" onclick="addItemToCart()"> <i class="fa-solid fa-cart-shopping fa-2x"></i> </a>
+                    </div>
+                </div>
+                
+            </div>
+
+            
+            <div class = navigation>
+                <div class = "nav-bar">
+                    <div class = "nav-button1">
+                        <a href = "#"> Home </a>
+                    </div>
+                    <div class = "nav-button2">
+                        <a href = "#"> About Page </a>
+                    </div>                        <div class = "nav-button3">
+                        <a href = "Forms_Page.html"> Settings </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container1">
+            <div>
+                <img class="dmslide" src="dmslide-slide1.jpg">
+                <img class="dmslide" src="dmslide-slide2.jpg">
+                <img class="dmslide" src="dmslide-slide3.jpg">
+
+            </div>
+            <div class="grid-container">
+                
+                <div class="item11">Categories <i class="fa-solid fa-bars"></i></div>
+                <a href="Fashion_Accessories_Page.html">
+                <div class="item2"><i class="fa-solid fa-bag-shopping"></i></div>
+                </a>
+                <a href="Toys-Page.html">
+                <div class="item3"><i class="fa-solid fa-child-reaching"></i></div>
+                </a>
+                <a href="HomeAppliances-Page.html">
+                <div class="item4"><i class="fa-solid fa-gamepad"></i></div>
+                </a>
+                <a href="Clothes_Page.html">
+                <div class="item5"><i class="fa-solid fa-shirt"></i></div>
+                </a>
+            </div>
+        
+            <div class="categories">
+                    <div class="item11"><p>Fas<span style="color:rgb(253, 203, 211)">hion Acces</span>sories</p></div>
+                    <div class="item1"><img class="images" src="https://lh3.googleusercontent.com/MhCikPUV7ylCjGWEoCYxxFygs_ttia2MPzDv-myWvTSfyyK3xH9jCj38qpLy1tI5HqxKjsgdPtgNMX8UO6HnoF6fSPDUACk99E9mpgPwVF0v4GEiMBflcbg6AGIulaSdI3e44LHAfQ=w2400"></div>
+                    <div class="item2"><img class="images" src="https://lh3.googleusercontent.com/M3HKPOfv3uIH5mZDCGiZAv8Yp-vCdsWuHqHTWhsFrjkBsOZhXd8b8V3MtFtp6pfqFDhMmn2lAYaIqjI41vlo-0ZxzjBkkpq31-OWtSpRs7icTgCWGs9hYEg-mk7irEHjeyPw_H-pdg=w2400"></div>
+                    <div class="item3"><img class="images" src="https://lh3.googleusercontent.com/COqbCLrmS2e1qitZHaQUoNGo_1lyIqozrj4LiLc5kKCYqqw_T2ep1tFden3iywYZvkcmwKRnQz0PgMGZOQJma3rKvhCtJ2x-8WYnct5P2arl7RD8fWcFuxwYwQd0RfqSe7h3USJ1yA=w2400"></div>
+                    <div class="item4"><img class="images" src="https://lh3.googleusercontent.com/1nEAmZpm2_ddsaljLAwTkPNZXBfrv0u5Hc96pL-OYFX3edKJDaOGINgHs7JOJGquifU9F8Bjy3wNZKkyp4LYllgVjApxclHJTzGI0Nk6tGpMcOVQRTn8_TgQTdicWRAYt0BipCy9kw=w2400"></div>
+                    <div class="item5"><img class="images" src="https://lh3.googleusercontent.com/1RzAFOTikMOEva6yl_fejaSzCH6ePvbMvjHZrcl-gGBDj_Wr3x4LyGlTuUfMwobLz6cq0e1cNNHVJxpCKJ3L0zJEVPDjM_JYIa9qMLRbNGZZLKnLErpnOdyjx73G1IHB61VNbpRmnw=w2400"></div>
+                    <div class="item6"><img class="images" src="https://lh3.googleusercontent.com/YY-PlLrJdkZ-TBIAkQk01iL-qeM8B605HoF27LahbOSqV8BPFKcitkDBsL3-i2r5SljuDxKIkRepHT9A2_hPBfRF4yHNeIrrlOpyqH8M5USYnWBt5ouxwcNstyuUfzSzVoVhvZ8XUQ=w2400"></div>
+            </div>
+            <div class="categories">
+                <div class="item11"><p> Toys' <span style="color: rgb(253, 203, 211)">Galore!</span></p></div>
+                <div class="item1"><img class="images" src="https://lh3.googleusercontent.com/e9Y3M83yWNt-LPBMeSZEHk_N_3GUGbcKKBHx8n8052UNo7sL-AwmT03o3NBI6TN_8mISWYzrVHLoivgsUCf5DETbjk9cDwXY8Vz2mpabhaYZK8ehJJTsZ2BRRUHkW0ZlmcpqESuNkQ=w2400"></div>
+                <div class="item2"><img class="images" src="https://lh3.googleusercontent.com/ZjK8v7p-edi0Szyf9FunlWcgibME3aPwkViU2tABwSEPWmbJ_cGG8SXNnqM0Ed6UhqxfQ6VOqD0fMKBV04eba8Rzj5RpxZd63Y1hUveDPoQznwhlVV8fuoO_kaEtIjjrxU6uXkdIBA=w2400"></div>
+                <div class="item3"><img class="images" src="https://lh3.googleusercontent.com/HpWQNxidhgVoj0tYI9oEunbvVgF0p_jEyMejQl9fTRKHKdnGdCQ8ONlvBqbn_Azp0fbxpdq1IXHGqX4VQR6GOzvfRdghoGc8P7PpuHwZ_amDM65h2UuuuN8pe5PeDMxK9jBQfGAyNQ=w2400"></div>
+                <div class="item4"><img class="images" src="https://lh3.googleusercontent.com/xfikjEBsI-37Uzpy1miNmON52ODbfIjE_UEgJAGStStlme4_Edr_oRmD3rHefoVUuU54uqrhBJzrBK79Meki_eRkvNDWvAI-a99C9FDDQraTciGjLPkiToZTexlurv42_-JawswYQA=w2400"></div>
+                <div class="item5"><img class="images" src="https://lh3.googleusercontent.com/bnh8rY7XTMY14BXM2VAHbiyaS3NQZOYcr8p3qP0cACt_lJ8k_MabqDM1VyhcRrAFN-8N0sB57wcMX8Tg7cETjQ2pxoWPVFmTFHK2-uo6wgE4oXdxsrGttUPsHliCErAOJcoXucqj8A=w2400"></div>
+                <div class="item6"><img class="images" src="https://lh3.googleusercontent.com/svD62ZIoPSGCGhU6336_0aAfBAfXyKWSzVhnX5DIV1eqEFbEfroLObFRYaLujAzBsse_D9oYjBpeHjXIHKVqvOjO8bik5EbEfxPoCkyXQgeF0YFPN-YLNjDbhV9uJ7xUD2H-u195TQ=w2400"></div>
+            </div>
+            <div class="categories">
+                <div class="item11"><p> <span style="color:rgb(253, 203, 211)">Alpha</span> Appliances</p></div>
+                <div class="item1"><img class="images" src="https://lh3.googleusercontent.com/F6P6H4MdCEO93k99JhXkuMduqBzv4Jrzy3FP3GECcXhvLomDrES8b6T3sGyXBuFcDbDKMCG52Ph8abbvBjf4kKW1x8abODRcU37W8yXHD4_pGqBPrXXXaJkWMqRV-1hHKijNuDeZQg=w2400"></div>
+                <div class="item2"><img class="images" src="https://lh3.googleusercontent.com/LfnfLYoR6KmgqC3usJ-OoRHl3RKyBu0BakNPS7JQPbuK94yeiCQUDFeDb9OyVNXGfLd81llSZGXm0XDiMK1r--agszF7ANyOX32VP9-AB8p5VaWZU9ZuNeEUh-mgn3qaxyPhKlz6JQ=w2400"></div>
+                <div class="item3"><img class="images" src="https://lh3.googleusercontent.com/gjUfxUFnNLojtMWb26QrsQ-ULbihaQIyY6VnE6S_TKvnBqnGz19R_gCE1VXfjswinoO0eRaNJ1RKNTKoH7mXmJQrF2De-oQ8yx9raj83mmyvWsOPKhpkjT9gQ9EAPhlQvlfMeki69Q=w240"></div>
+                <div class="item4"><img class="images" src="https://lh3.googleusercontent.com/-O_UaePTUPdln9czhj2zTEAe-LiNkvqZOcIt_0kCbLuqRbQ192vZyeESUgXNBYdmAkbXufTHPfaVo-VfegJxwojvSu3qHR976vVXdIaSXgN16rkugNbZPgiwpnW_vW8DJDwK7w_TrA=w2400"></div>
+                <div class="item5"><img class="images" src="https://lh3.googleusercontent.com/ndYhs_ClPHOVGgeF1mOj0WoOCbFZD7KRMBJ-G1VHfBcUMHjUwrC8hROEQq8J-6jI6gO2mgPUE7WCyMusY7PK-q-BNzJCQN9sSt5bfQruGEqggzFUZzGKZ4ORIM9EvTxJpV1RK3gp2Q=w2400"></div>
+                <div class="item6"><img class="images" src="https://lh3.googleusercontent.com/3Y6PWpK79MLJWDSS5k6p-6aYgLYZH8BCB5LBWpdUzQsvh_YSE5is4kQq_vFB0h5Xvo5LA0RAYkWQJs5N_ybfcfIOr7W86oO05OL6UGcEz6I_ghU21VcrYkAGHhwm3Bw-WaCEPaWQgA=w2400"></div>
+            </div>
+            <div class="categories">
+                <div class="item11"><p><span>Clot</span>hes Cata<span>log</span></p></div>
+                <div class="item1"><img class="images" src="https://lh3.googleusercontent.com/MhCikPUV7ylCjGWEoCYxxFygs_ttia2MPzDv-myWvTSfyyK3xH9jCj38qpLy1tI5HqxKjsgdPtgNMX8UO6HnoF6fSPDUACk99E9mpgPwVF0v4GEiMBflcbg6AGIulaSdI3e44LHAfQ=w2400"></div>
+                <div class="item2"><img class="images" src="https://lh3.googleusercontent.com/M3HKPOfv3uIH5mZDCGiZAv8Yp-vCdsWuHqHTWhsFrjkBsOZhXd8b8V3MtFtp6pfqFDhMmn2lAYaIqjI41vlo-0ZxzjBkkpq31-OWtSpRs7icTgCWGs9hYEg-mk7irEHjeyPw_H-pdg=w2400"></div>
+                <div class="item3"><img class="images" src="https://lh3.googleusercontent.com/COqbCLrmS2e1qitZHaQUoNGo_1lyIqozrj4LiLc5kKCYqqw_T2ep1tFden3iywYZvkcmwKRnQz0PgMGZOQJma3rKvhCtJ2x-8WYnct5P2arl7RD8fWcFuxwYwQd0RfqSe7h3USJ1yA=w2400"></div>
+                <div class="item4"><img class="images" src="https://lh3.googleusercontent.com/1nEAmZpm2_ddsaljLAwTkPNZXBfrv0u5Hc96pL-OYFX3edKJDaOGINgHs7JOJGquifU9F8Bjy3wNZKkyp4LYllgVjApxclHJTzGI0Nk6tGpMcOVQRTn8_TgQTdicWRAYt0BipCy9kw=w2400"></div>
+                <div class="item5"><img class="images" src="https://lh3.googleusercontent.com/1RzAFOTikMOEva6yl_fejaSzCH6ePvbMvjHZrcl-gGBDj_Wr3x4LyGlTuUfMwobLz6cq0e1cNNHVJxpCKJ3L0zJEVPDjM_JYIa9qMLRbNGZZLKnLErpnOdyjx73G1IHB61VNbpRmnw=w2400"></div>
+                <div class="item6"><img class="images" src="https://lh3.googleusercontent.com/YY-PlLrJdkZ-TBIAkQk01iL-qeM8B605HoF27LahbOSqV8BPFKcitkDBsL3-i2r5SljuDxKIkRepHT9A2_hPBfRF4yHNeIrrlOpyqH8M5USYnWBt5ouxwcNstyuUfzSzVoVhvZ8XUQ=w2400"></div>
+            </div>
+
+            
+        </div>
+
+
+        <div class = "footer">
+            <p> Copyright &copy; 2022 InstaBag. All Rights Reserved </p>
+        </div>
+        <script>
+            function myAlert(){
+                alert(
+                    ""
+                )
+            }
+            var pptx = 0;
+            autoslide();
+
+            function autoslide() {
+            var i;
+            var x = document.getElementsByClassName("dmslide");
+            for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+            }
+            pptx++;
+            if (pptx > x.length) {pptx = 1}    
+            x[pptx-1].style.display = "block";  
+            setTimeout(autoslide, 5000); 
+}
+           
+        </script>
+        <script src="instabagjs.js"></script>
+    </body>
+ </html>

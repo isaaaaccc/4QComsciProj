@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang = "en">
+   <head>
+       <title> Toys Page </title>
+       <meta charset = "utf-8">
+       <meta name = "viewport" content = "width=device-width, inital-scale = 1">
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+       <script src="https://kit.fontawesome.com/2a3c86d9f4.js" crossorigin="anonymous"></script>
+       
+       <style>
+           body {
+    background-color: whitesmoke;
+}
+
+hr {
+    padding-top: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: rgba(0, 0, 0, 0.45);
+}
+
+.header {
+    display: inline-flex;
+    background-color: #FEDCDC;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+}
+
+.logo, .searchbox{
+    display: inline-flex;
+}
+
+.searchbox {
+    width: 500px;
+    height: 40%;
+}
+
+.sbutton button { 
+    height: 100%;
+    border-color: white;
+}
+
+
+.logo {
+    background-image: url('https://i.postimg.cc/9fZcFrMR/E-Shop-Logo-removebg-preview.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.logo h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    color: black;
+}
+
+.cbutton a {
+    width: 80px;
+    height: 80px;
+    background-color: #FEDCDC;
+    position: relative;
+    left: 10px;
+    top: 4px;
+}
+
+.cbutton i {
+    color: black;
+}
+
+.cbutton i:hover {
+    color: rgba(0, 0, 0, 0.495);
+}
+
+.navigation {
+    display: flex;
+    height: 60%;
+    background-color: #f4f4f4;
+    border-radius: 20px;
+}
+
+.nav-bar{
+    display: inline-flex;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-button1, .nav-button2, .nav-button3 {
+    background-color: #FEE7E6;
+    text-align: center;
+    border-width: 10px;
+    border-style: outset;
+    border-radius: 20px;
+}
+
+.nav-button1:hover, .nav-button2:hover, .nav-button3:hover {
+    border-style: inset;
+}
+
+
+.container1 {
+    display: inline-flex;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: rgba(237, 231, 231, 0.879);
+}
+
+.c-imageset-1 {
+    display: inline-flex;
+    background-color: #f4f4f4;
+    }
+
+.c-imageset-2 {
+    display: inline-flex;
+    background-color: #f4f4f4;
+    }    
+
+.image1, .image2, .image3 {
+    background-color: rgba(237, 231, 231, 0.879);
+    border-style: outset;
+    border-width: 10px;
+}
+
+.description {
+    margin-left: 10px;
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: rgba(237, 231, 231, 0.879);
+}
+
+.footer p {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+/* Photos for Products */
+
+.actual-img1 {
+    background-image: url('https://lh3.googleusercontent.com/e9Y3M83yWNt-LPBMeSZEHk_N_3GUGbcKKBHx8n8052UNo7sL-AwmT03o3NBI6TN_8mISWYzrVHLoivgsUCf5DETbjk9cDwXY8Vz2mpabhaYZK8ehJJTsZ2BRRUHkW0ZlmcpqESuNkQ=w2400');
+}
+
+.actual-img2 {
+    background-image: url('https://lh3.googleusercontent.com/ZjK8v7p-edi0Szyf9FunlWcgibME3aPwkViU2tABwSEPWmbJ_cGG8SXNnqM0Ed6UhqxfQ6VOqD0fMKBV04eba8Rzj5RpxZd63Y1hUveDPoQznwhlVV8fuoO_kaEtIjjrxU6uXkdIBA=w2400');
+}
+
+.actual-img3 {
+    background-image: url('https://lh3.googleusercontent.com/HpWQNxidhgVoj0tYI9oEunbvVgF0p_jEyMejQl9fTRKHKdnGdCQ8ONlvBqbn_Azp0fbxpdq1IXHGqX4VQR6GOzvfRdghoGc8P7PpuHwZ_amDM65h2UuuuN8pe5PeDMxK9jBQfGAyNQ=w2400');
+}
+
+.actual-img4 {
+    background-image: url('https://lh3.googleusercontent.com/xfikjEBsI-37Uzpy1miNmON52ODbfIjE_UEgJAGStStlme4_Edr_oRmD3rHefoVUuU54uqrhBJzrBK79Meki_eRkvNDWvAI-a99C9FDDQraTciGjLPkiToZTexlurv42_-JawswYQA=w2400');
+}
+
+.actual-img5 {
+    background-image: url('https://lh3.googleusercontent.com/bnh8rY7XTMY14BXM2VAHbiyaS3NQZOYcr8p3qP0cACt_lJ8k_MabqDM1VyhcRrAFN-8N0sB57wcMX8Tg7cETjQ2pxoWPVFmTFHK2-uo6wgE4oXdxsrGttUPsHliCErAOJcoXucqj8A=w2400');
+}
+
+.actual-img6 {
+    background-image: url('https://lh3.googleusercontent.com/svD62ZIoPSGCGhU6336_0aAfBAfXyKWSzVhnX5DIV1eqEFbEfroLObFRYaLujAzBsse_D9oYjBpeHjXIHKVqvOjO8bik5EbEfxPoCkyXQgeF0YFPN-YLNjDbhV9uJ7xUD2H-u195TQ=w2400');
+}
+
+/* Photos for Products */
+
+/* Media Query for Phone and Tablet */
+@media (max-width: 940px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .logo {
+        position: relative;
+        right: 60px;
+    }
+
+    .logo h1 {
+        font-size: 40px;
+        position: relative;
+        left: 60px;
+        top: 5px;
+    }
+
+    .search {
+        width: auto;
+    }
+
+    .searchbox {
+        margin-left: 50%;
+        margin-top: 10px;
+    }
+
+    .navigation {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .nav-button1, .nav-button2, .nav-button3 {
+        width: 110px;
+    }
+
+    .container1 {
+        height: 1200px;
+        flex-direction: row;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 230px;
+        margin-bottom: 30px;
+    }
+
+    @media (max-width: 650px) {
+        .container1 {
+            height: 2400px;
+            flex-direction: column;
+        }
+
+        .c-imageset-1, .c-imageset-2 {
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+    }
+
+    .c-imageset-1, .c-imageset-2 {
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .c-imageset-1 {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .c-imageset-2 {
+        width: 90%;
+        margin-right: 5%;
+    }
+
+    .image1, .image2, .image3 {
+        display: inline-flex;
+        flex-direction: column;
+        width: 60%;
+        height: 80%;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .actual-img1, .actual-img2, .actual-img3, 
+    .actual-img4, .actual-img5, .actual-img6 {
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+        height: 60%;
+        margin-bottom: 20%;
+    }
+
+}
+/* Media Query for Phone and Tablet */
+
+/*Media Query for Desktop*/
+@media (min-width: 941px) {
+    .header {
+        height: 110px;
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .logo h1 {
+        position: relative;
+        left: 110px;
+        top: 28px;
+    }
+
+    .search {
+        width: 80%;
+    }
+
+    .navigation {
+        margin-top: 20px;
+        margin-left: 30px;
+        align-items: center;
+    }
+
+    .searchbox {
+        margin-top: 35px;
+        margin-left: 200px;
+    }
+
+    .nav-button1, .nav-button2, .nav-button3 {
+        width: 110px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 10px;
+    }
+
+    .container1 {
+        height: 1300px;
+        flex-direction: column;
+        margin-top: 150px;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 40px;
+    }
+
+    .c-imageset-1, .c-imageset-2 {
+        height: 50%;
+    }
+
+    .c-imageset-1 {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .c-imageset-2 {
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .image1, .image2, .image3 {
+        width: 60%;
+        height: 80%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        padding-bottom: 80px;
+    }
+
+    .actual-img1, .actual-img2, .actual-img3, 
+    .actual-img4, .actual-img5, .actual-img6 {
+        background-color: blue;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+        height: 60%;
+        margin-bottom: 20%;
+    }
+
+    button {
+        margin-top: 5%;
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+
+    }
+
+    .image1 button:hover, .image2 button:hover, .image3 button:hover {
+        background-color: whitesmoke;
+    }
+
+}
+/*Media Query for Desktop*/
+       </style>
+       
+   </head>
+
+   <body>
+       <div class = "header">
+           <div class = "logo">
+               <a href = "#"><h1> InstaBag </h1></a>
+           </div>
+           <div class = "searchbox">
+               <input type = "text" placeholder = "Search" class = "search">
+               <div class = "sbutton">
+                   <button> <i class="fa-solid fa-magnifying-glass"></i> </button>
+               </div>
+
+               <div class = "cart">
+                   <div class = "cbutton">
+                        <a href = "Shopping_Cart.html" onclick="addItemToCart()"> <i class="fa-solid fa-cart-shopping fa-2x"></i> </a>
+                   </div>
+               </div>
+               
+           </div>
+
+           
+           <div class = navigation>
+               <div class = "nav-bar">
+                   <div class = "nav-button1">
+                       <a href = "Homepage.html"> Home </a>
+                   </div>
+                   <div class = "nav-button2">
+                       <a href = "#"> About Page </a>
+                   </div>                        <div class = "nav-button3">
+                       <a href = "Forms_Page.html"> Settings </a>
+                   </div>
+               </div>
+           </div>
+
+
+           
+       </div>
+<!-- Section with links that connect to different products -->
+       <div class = "container1">
+               <div class = "c-imageset-1">
+                   
+                   <div class = "image1">
+                       <a href = "#"></a>
+                       <image class="shopimg actual-img1" src="https://lh3.googleusercontent.com/e9Y3M83yWNt-LPBMeSZEHk_N_3GUGbcKKBHx8n8052UNo7sL-AwmT03o3NBI6TN_8mISWYzrVHLoivgsUCf5DETbjk9cDwXY8Vz2mpabhaYZK8ehJJTsZ2BRRUHkW0ZlmcpqESuNkQ=w2400">
+                       <a href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                        <div class = "description">
+                        <h1 class="shoptitle"> Lego Set </h1>
+                        <hr>
+                        <h2> Price: $19.99 </h2>
+                    </div>
+                    </a>
+                    <button class="shopbtn"> Add to Cart </button>
+                   </div>
+
+                   <div class = "image2">
+
+                       <a href = "#"></a>
+                       <image class="shopimg actual-img2" src="https://lh3.googleusercontent.com/ZjK8v7p-edi0Szyf9FunlWcgibME3aPwkViU2tABwSEPWmbJ_cGG8SXNnqM0Ed6UhqxfQ6VOqD0fMKBV04eba8Rzj5RpxZd63Y1hUveDPoQznwhlVV8fuoO_kaEtIjjrxU6uXkdIBA=w2400">
+                       <a href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                        <div class = "description">
+                        <h1 class="shoptitle"> Teddy Bear </h1>
+                        <hr>
+                        <h2> Price: $4.99 </h2>
+                    </div>
+                    </a>
+                    <button class="shopbtn"> Add to Cart </button>
+                       
+                   </div>
+                   <div class = "image3">
+
+                       <a href = "#"></a>
+                       <image class="shopimg actual-img3" src="https://lh3.googleusercontent.com/HpWQNxidhgVoj0tYI9oEunbvVgF0p_jEyMejQl9fTRKHKdnGdCQ8ONlvBqbn_Azp0fbxpdq1IXHGqX4VQR6GOzvfRdghoGc8P7PpuHwZ_amDM65h2UuuuN8pe5PeDMxK9jBQfGAyNQ=w2400">
+                       <a href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                        <div class = "description">
+                        <h1 class="shoptitle"> Spinners </h1>
+                        <hr>
+                        <h2> Price: $3.99 </h2>
+                    </div>
+                    </a>
+                    <button class="shopbtn"> Add to Cart </button>
+                       
+                   </div>
+               </div>
+   
+               <div class = "c-imageset-2">
+
+
+                   <div class = "image1">
+                       <a href = "#"></a>
+                       <image class="shopimg actual-img4" src="https://lh3.googleusercontent.com/xfikjEBsI-37Uzpy1miNmON52ODbfIjE_UEgJAGStStlme4_Edr_oRmD3rHefoVUuU54uqrhBJzrBK79Meki_eRkvNDWvAI-a99C9FDDQraTciGjLPkiToZTexlurv42_-JawswYQA=w2400">
+                       <a href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                        <div class = "description">
+                        <h1 class="shoptitle"> Rubik's Cube </h1>
+                        <hr>
+                        <h2> Price: $19.99 </h2>
+                    </div>
+                    </a>
+                    <button class="shopbtn"> Add to Cart </button>
+                   </div>
+
+                   <div class = "image2">
+
+                       <a href = "#"></a>
+                       <image class="shopimg actual-img5" src="https://lh3.googleusercontent.com/bnh8rY7XTMY14BXM2VAHbiyaS3NQZOYcr8p3qP0cACt_lJ8k_MabqDM1VyhcRrAFN-8N0sB57wcMX8Tg7cETjQ2pxoWPVFmTFHK2-uo6wgE4oXdxsrGttUPsHliCErAOJcoXucqj8A=w2400">
+                       <a href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                        <div class = "description">
+                        <h1 class="shoptitle"> Toy Car </h1>
+                        <hr>
+                        <h2> Price: $1.99 </h2>
+                    </div>
+                    </a>
+                    <button class="shopbtn"> Add to Cart </button>
+                       
+                   </div>
+                   <div class = "image3">
+                       
+                    <image class="shopimg actual-img6" src="https://lh3.googleusercontent.com/svD62ZIoPSGCGhU6336_0aAfBAfXyKWSzVhnX5DIV1eqEFbEfroLObFRYaLujAzBsse_D9oYjBpeHjXIHKVqvOjO8bik5EbEfxPoCkyXQgeF0YFPN-YLNjDbhV9uJ7xUD2H-u195TQ=w2400">
+                       <a href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                           <div class = "description">
+                           <h1 class="shoptitle"> Pikachu Toy </h1>
+                           <hr>
+                           <h2> Price: $14.99 </h2>
+                       </div>
+                       </a> 
+                       <button class="shopbtn"> Add to Cart </button>
+                       
+                       
+                   </div>
+               </div>
+           
+       </div>
+<!-- Section with links that connect to different products -->
+
+       <div class = "footer">
+           <p> Copyright &copy; 2022 InstaBag. All Rights Reserved </p>
+       </div>
+       <script src="instabagjs.js"></script>
+   </body>
+</html>

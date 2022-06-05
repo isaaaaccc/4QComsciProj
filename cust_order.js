@@ -3,11 +3,11 @@ var totalPrice = 0;
 
         function displayProduct() {
             console.log(cust_order);
-            document.getElementByClassName("container2").innerHTML = "";
+            document.getElementByClass("container2").innerHTML = "";
             var totalPrice = 0;
             for (var i = 0; i < cust_order.length; i++) {
                 if (cust_order[i] != "fake") {
-                    document.getElementByClassName("container2").innerHTML += "<tr><td><h5><strong id=" + i + ">" + cust_order[i].prod_name +
+                    document.getElementByClass("container2").innerHTML += "<tr><td><h5><strong id=" + i + ">" + cust_order[i].prod_name +
                         "</strong></h5><br><h6>₱" + cust_order[i].prod_price + ".00" + "&nbsp;" + "</h6></td><td><button id='something' ' class='btn btn-danger' style='float: right;' onClick='removeItem(" + i + ")'>Remove</button></td></tr>" + "</br></br>";
 
                     var productPrice = cust_order[i].prod_price;

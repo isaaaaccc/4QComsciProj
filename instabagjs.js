@@ -8,7 +8,7 @@ function ready(){
 var removeCartItemButtons = document.getElementsByClassName('btn-danger')
 console.log(removeCartItemButtons)
 
-for(var i = 0; i < removeCartItemButtons.length; i++) {
+for(var i = 0; i <removeCartItemButtons.length; i++) {
     var button = removeCartItemButtons[i]
     button.addEventListener('click', removeCartItem)
 
@@ -17,7 +17,7 @@ for(var i = 0; i < removeCartItemButtons.length; i++) {
 
 
 var addToCartButtons = document.getElementsByClassName('shopbtn')
-for(var i = 0; i < addToCartButtons.length; i++){
+for(var i = 0; i <addToCartButtons.length; i++){
     var button = addToCartButtons[i]
     button.addEventListener('click', addToCartClicked)
 }
@@ -38,13 +38,13 @@ function addToCartClicked(event){
 }
 
 function addItemToCart (){
-for(a = 0; a < localStorage.length; a++){
+for(a = 0; a <localStorage.length; a++){
     var cartRow = document.createElement('div')
     cartRow.classList.add('cartitem')
     var cartItems = document.getElementsByClassName('cartitems')[0]
     var nthItem = localStorage.key(a)
     var cartRowContents = `
-    <image src="${localStorage.getItem(nthItem)}">
+    <image src="${localStorage.getItem(nthItem)} alt="smth"">
                     <div class="details">
                         <p>${nthItem}</p>
                     </div>

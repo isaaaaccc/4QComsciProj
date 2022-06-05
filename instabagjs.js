@@ -53,6 +53,7 @@ for(a = 0; a < localStorage.length; a++){
                     </div>`
     cartRow.innerHTML = cartRowContents
     cartItems.append(cartRow)
+    cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem)
 }
 }
 

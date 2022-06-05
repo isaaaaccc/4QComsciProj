@@ -23,243 +23,243 @@ var totalPrice = 0;
         }
 
         function washMach() {
-            var washMach = {
+            var washMah = {
                 prod_name: "Washing Machine",
                 prod_price: 10500
             };
-            cust_order.push(washMach);
+            cust_order.push(washMah);
             pampaGanaNgCode;
-            washMach = {};
+            washMah = {};
         }
 
         function refRef() {
-            var RefRef = {
+            var RefRf = {
                 prod_name: "Whirlpool Refrigerator",
                 prod_price: 25020
             };
-            cust_order.push(refRef);
+            cust_order.push(refRf);
             pampaGanaNgCode;
-            refRef = {};
+            refRf = {};
         }
 
         function vacVac() {
-            var vacVac = {
+            var vacVc = {
                 prod_name: "Vacuum Cleaner",
                 prod_price: 10300
             };
-            cust_order.push(vacVac);
+            cust_order.push(vacVc);
             pampaGanaNgCode;
-            vacVac = {};
+            vacVc = {};
         }
 
         function elecElec() {
-            var elecElec = {
+            var elecElc = {
                 prod_name: "Panasonic Electric Fan",
                 prod_price: 5400
             };
-            cust_order.push(elecElec);
+            cust_order.push(elecElc);
             pampaGanaNgCode;
-            elecElec = {};
+            elecElc = {};
         }
 
         function micMic() {
-            var micMic = {
+            var micMc = {
                 prod_name: "Samsung Microwave",
                 prod_price: 17030
             };
-            cust_order.push(micMic);
+            cust_order.push(micMc);
             pampaGanaNgCode;
-            micMic = {};
+            micMc = {};
         }
 
         function bleBle() {
-            var bleBle = {
+            var bleBe = {
                 prod_name: "All-Clad Blender",
                 prod_price: 690
             };
-            cust_order.push(bleBle);
+            cust_order.push(bleBe);
             pampaGanaNgCode;
-            bleBle = {};
+            bleBe = {};
         }
 
         function legLeg() {
-            var legLeg = {
+            var legLg = {
                 prod_name: "Lego Set",
                 prod_price: 3500
             };
-            cust_order.push(legLeg);
+            cust_order.push(legLg);
             pampaGanaNgCode;
-            legLeg = {};
+            legLg = {};
         }
 
         function tedTed() {
-            var tedTed = {
+            var tedTd = {
                 prod_name: "Teddy Bear",
                 prod_price: 400
             };
-            cust_order.push(tedTed);
+            cust_order.push(tedTd);
             pampaGanaNgCode;
-            tedTed = {};
+            tedTd = {};
         }
 
         function spiSpi() {
-            var spiSpi = {
+            var spiSi = {
                 prod_name: "Spinners",
                 prod_price: 100
             };
-            cust_order.push(spiSpi);
+            cust_order.push(spiSi);
             pampaGanaNgCode;
-            spiSpi = {};
+            spiSi = {};
         }
 
         function rubRub() {
-            var rubRub = {
+            var rubRb = {
                 prod_name: "Rubik's Cube",
                 prod_price: 700
             };
-            cust_order.push(rubRub);
+            cust_order.push(rubRb);
             pampaGanaNgCode;
-            rubRub = {};
+            rubRb = {};
         }
 
         function carCar() {
-            var carCar = {
+            var carCr = {
                 prod_name: "Toy Car",
                 prod_price: 650
             };
-            cust_order.push(carCar);
+            cust_order.push(carCr);
             pampaGanaNgCode;
-            carCar = {};
+            carCr = {};
         }
 
         function pikPik() {
-            var pikPik = {
+            var pikPk = {
                 prod_name: "Pikachu Toy",
                 prod_price: 2900
             };
-            cust_order.push(pikPik);
+            cust_order.push(pikPk);
             pampaGanaNgCode;
-            pikPik = {};
+            pikPk = {};
         }
 
         function poloPolo() {
-            var poloPolo = {
+            var poloPlo = {
                 prod_name: "Polo Shirt",
                 prod_price: 500
             };
-            cust_order.push(poloPolo);
+            cust_order.push(poloPlo);
             pampaGanaNgCode;
-            poloPolo = {};
+            poloPlo = {};
         }
 
         function treTre() {
-            var treTre = {
+            var treTe = {
                 prod_name: "Trench Coat",
                 prod_price: 17600
             };
-            cust_order.push(treTre);
+            cust_order.push(treTe);
             pampaGanaNgCode;
-            treTre = {};
+            treTe = {};
         }
 
         function graGra() {
-            var graGra = {
+            var graGr = {
                 prod_name: "Gray Sweater",
                 prod_price: 1000
             };
-            cust_order.push(graGra);
+            cust_order.push(graGr);
             pampaGanaNgCode;
-            graGra = {};
+            graGr = {};
         }
 
         function broBro() {
-            var broBro = {
+            var broBr = {
                 prod_name: "Brown Pants",
                 prod_price: 3770
             };
-            cust_order.push(broBro);
+            cust_order.push(broBr);
             pampaGanaNgCode;
-            broBro = {};
+            broBr = {};
         }
 
         function spoSpo() {
-            var spoSpo = {
+            var spoSo = {
                 prod_name: "Sports Shorts",
                 prod_price: 800
             };
-            cust_order.push(spoSpo);
+            cust_order.push(spoSo);
             pampaGanaNgCode;
-            spoSpo = {};
+            spoSo = {};
         }
 
         function jeJe() {
-            var jeJe = {
+            var jeJee = {
                 prod_name: "Jeans",
                 prod_price: 900
             };
-            cust_order.push(jeJe);
+            cust_order.push(jeJee);
             pampaGanaNgCode;
-            jeJe = {};
+            jeJee = {};
         }
 
         function necNec() {
-            var necNec = {
+            var necNc = {
                 prod_name: "Necklace",
                 prod_price: 299.99
             };
-            cust_order.push(necNec);
+            cust_order.push(necNc);
             pampaGanaNgCode;
-            necNec = {};
+            necNc = {};
         }
 
         function waWa() {
-            var waWa = {
+            var waWaw = {
                 prod_name: "Watch",
                 prod_price: 1999.99
             };
-            cust_order.push(waWa);
+            cust_order.push(waWaw);
             pampaGanaNgCode;
-            waWa = {};
+            waWaw = {};
         }
 
         function sunSun() {
-            var sunSun = {
+            var sunSuna = {
                 prod_name: "Sunglasses",
                 prod_price: 49.99
             };
-            cust_order.push(sunSun);
+            cust_order.push(sunSuna);
             pampaGanaNgCode;
-            sunSun = {};
+            sunSuna = {};
         }
 
         function beltBelt() {
-            var beltBelt = {
+            var beltBelta = {
                 prod_name: "Belt",
                 prod_price: 19.99
             };
-            cust_order.push(beltBelt);
+            cust_order.push(beltBelta);
             pampaGanaNgCode;
-            beltBelt = {};
+            beltBelta = {};
         }
 
         function heHe() {
-            var heHe = {
+            var heHea = {
                 prod_name: "Headphones",
                 prod_price: 79.99
             };
-            cust_order.push(heHe);
+            cust_order.push(heHea);
             pampaGanaNgCode;
-            heHe = {};
+            heHea = {};
         }
 
         function bracBrac() {
-            var bracBrac = {
+            var bracBraca = {
                 prod_name: "Bracelet",
                 prod_price: 19.99
             };
-            cust_order.push(bracBrac);
+            cust_order.push(bracBraca);
             pampaGanaNgCode;
-            bracBrac = {};
+            bracBraca = {};
         }
 
         function pampaGanaNgCode() {

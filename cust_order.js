@@ -28,7 +28,7 @@ var totalPrice = 0;
                 prod_price: 10500
             };
             cust_order.push(washMach);
-            displayProduct();
+            pampaGanaNgCode;
             washMach = {};
         }
 
@@ -38,7 +38,7 @@ var totalPrice = 0;
                 prod_price: 25020
             };
             cust_order.push(refRef);
-            displayProduct();
+            pampaGanaNgCode;
             refRef = {};
         }
 
@@ -48,7 +48,7 @@ var totalPrice = 0;
                 prod_price: 10300
             };
             cust_order.push(vacVac);
-            displayProduct();
+            pampaGanaNgCode;
             vacVac = {};
         }
 
@@ -58,7 +58,7 @@ var totalPrice = 0;
                 prod_price: 5400
             };
             cust_order.push(elecElec);
-            displayProduct();
+            pampaGanaNgCode;
             elecElec = {};
         }
 
@@ -68,7 +68,7 @@ var totalPrice = 0;
                 prod_price: 17030
             };
             cust_order.push(micMic);
-            displayProduct();
+            pampaGanaNgCode;
             micMic = {};
         }
 
@@ -78,7 +78,7 @@ var totalPrice = 0;
                 prod_price: 690
             };
             cust_order.push(bleBle);
-            displayProduct();
+            pampaGanaNgCode;
             bleBle = {};
         }
 
@@ -88,7 +88,7 @@ var totalPrice = 0;
                 prod_price: 3500
             };
             cust_order.push(legLeg);
-            displayProduct();
+            pampaGanaNgCode;
             legLeg = {};
         }
 
@@ -98,7 +98,7 @@ var totalPrice = 0;
                 prod_price: 400
             };
             cust_order.push(tedTed);
-            displayProduct();
+            pampaGanaNgCode;
             tedTed = {};
         }
 
@@ -108,7 +108,7 @@ var totalPrice = 0;
                 prod_price: 100
             };
             cust_order.push(spiSpi);
-            displayProduct();
+            pampaGanaNgCode;
             spiSpi = {};
         }
 
@@ -118,7 +118,7 @@ var totalPrice = 0;
                 prod_price: 700
             };
             cust_order.push(rubRub);
-            displayProduct();
+            pampaGanaNgCode;
             rubRub = {};
         }
 
@@ -128,7 +128,7 @@ var totalPrice = 0;
                 prod_price: 650
             };
             cust_order.push(carCar);
-            displayProduct();
+            pampaGanaNgCode;
             carCar = {};
         }
 
@@ -138,7 +138,7 @@ var totalPrice = 0;
                 prod_price: 2900
             };
             cust_order.push(pikPik);
-            displayProduct();
+            pampaGanaNgCode;
             pikPik = {};
         }
 
@@ -148,7 +148,7 @@ var totalPrice = 0;
                 prod_price: 500
             };
             cust_order.push(poloPolo);
-            displayProduct();
+            pampaGanaNgCode;
             poloPolo = {};
         }
 
@@ -158,7 +158,7 @@ var totalPrice = 0;
                 prod_price: 17600
             };
             cust_order.push(treTre);
-            displayProduct();
+            pampaGanaNgCode;
             treTre = {};
         }
 
@@ -168,7 +168,7 @@ var totalPrice = 0;
                 prod_price: 1000
             };
             cust_order.push(graGra);
-            displayProduct();
+            pampaGanaNgCode;
             graGra = {};
         }
 
@@ -178,7 +178,7 @@ var totalPrice = 0;
                 prod_price: 3770
             };
             cust_order.push(broBro);
-            displayProduct();
+            pampaGanaNgCode;
             broBro = {};
         }
 
@@ -188,7 +188,7 @@ var totalPrice = 0;
                 prod_price: 800
             };
             cust_order.push(spoSpo);
-            displayProduct();
+            pampaGanaNgCode;
             spoSpo = {};
         }
 
@@ -198,7 +198,7 @@ var totalPrice = 0;
                 prod_price: 900
             };
             cust_order.push(jeJe);
-            displayProduct();
+            pampaGanaNgCode;
             jeJe = {};
         }
 
@@ -208,7 +208,7 @@ var totalPrice = 0;
                 prod_price: 299.99
             };
             cust_order.push(necNec);
-            displayProduct();
+            pampaGanaNgCode;
             necNec = {};
         }
 
@@ -218,7 +218,7 @@ var totalPrice = 0;
                 prod_price: 1999.99
             };
             cust_order.push(waWa);
-            displayProduct();
+            pampaGanaNgCode;
             waWa = {};
         }
 
@@ -228,7 +228,7 @@ var totalPrice = 0;
                 prod_price: 49.99
             };
             cust_order.push(sunSun);
-            displayProduct();
+            pampaGanaNgCode;
             sunSun = {};
         }
 
@@ -238,7 +238,7 @@ var totalPrice = 0;
                 prod_price: 19.99
             };
             cust_order.push(beltBelt);
-            displayProduct();
+            pampaGanaNgCode;
             beltBelt = {};
         }
 
@@ -248,7 +248,7 @@ var totalPrice = 0;
                 prod_price: 79.99
             };
             cust_order.push(heHe);
-            displayProduct();
+            pampaGanaNgCode;
             heHe = {};
         }
 
@@ -258,7 +258,7 @@ var totalPrice = 0;
                 prod_price: 19.99
             };
             cust_order.push(bracBrac);
-            displayProduct();
+            pampaGanaNgCode;
             bracBrac = {};
         }
 
